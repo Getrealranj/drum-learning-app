@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Learning App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>🥁 Drum Learning App</h1>
+        <p>Click the drums or use your keyboard to play!</p>
+    </div>
+
+    <div class="drum-kit">
+        <button class="drum-pad kick" data-key="65" data-sound="kick">
+            <span class="key-hint">A</span>
+            KICK
+        </button>
+        <button class="drum-pad snare" data-key="83" data-sound="snare">
+            <span class="key-hint">S</span>
+            SNARE
+        </button>
+        <button class="drum-pad hihat" data-key="68" data-sound="hihat">
+            <span class="key-hint">D</span>
+            HI-HAT
+        </button>
+        <button class="drum-pad tom1" data-key="70" data-sound="tom1">
+            <span class="key-hint">F</span>
+            TOM 1
+        </button>
+        <button class="drum-pad tom2" data-key="71" data-sound="tom2">
+            <span class="key-hint">G</span>
+            TOM 2
+        </button>
+        <button class="drum-pad tom3" data-key="72" data-sound="tom3">
+            <span class="key-hint">H</span>
+            TOM 3
+        </button>
+        <button class="drum-pad crash" data-key="74" data-sound="crash">
+            <span class="key-hint">J</span>
+            CRASH
+        </button>
+        <button class="drum-pad ride" data-key="75" data-sound="ride">
+            <span class="key-hint">K</span>
+            RIDE
+        </button>
+    </div>
+
+    <div class="controls">
+        <button class="control-btn" id="playPattern">Play Pattern</button>
+        <button class="control-btn" id="stopPattern">Stop</button>
+        <button class="control-btn" id="nextPattern">Next Pattern</button>
+    </div>
+
+    <div class="pattern-display">
+        <h3>Current Pattern: <span id="patternName">Basic Rock</span></h3>
+        <p id="patternNotation">K - S - K - S -</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
